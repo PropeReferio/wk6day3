@@ -5,74 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Race Data Homework</title>
-    <script src="js/jquery.js" defer></script>
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    <form action="" id="yearlap">
-        <input type="text" name="year" placeholder="Year">
-        <input type="text" name="lap"  placeholder="Lap">
-        <button id="submitButton" onClick="event.preventDefault(); submitForm()">Submit</button>
+    <form action="" name = "f1Form" id="yearlap">
+        <input type="text" id="year" name="year" placeholder="Year">
+        <input type="text" id="lap" name="lap"  placeholder="Lap">
+        <button id="submitButton" class="btn btn-primary" onClick="event.preventDefault(); submitForm()">Submit</button>
     </form>
 
     <h1>Change this to race data, testing</h1>
-    <table id="racedata">
+    <table id="racedata" class="table table-dark">
         <tr>
-            <th>Position</th>
-            <th>Name</th>
-            <th>Nationality</th>
-            <th>Sponsor</th>
-            <th>Points</th>
+            <th scope="col">Position</th>
+            <th scope="col">Name</th>
+            <th scope="col">Nationality</th>
+            <th scope="col">Sponsor</th>
+            <th scope="col">Points</th>
         </tr>
         <tr>
-            <td>1</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th scope="row" id="position0"></th>
+            <td id="driverName0"></td>
+            <td id="nationality0"></td>
+            <td id="sponsor0"></td>
+            <td id="points0"></td>
         </tr>
         <tr>
-            <td>2</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th scope="row" id="position1"></th>
+            <td id="driverName1"></td>
+            <td id="nationality1"></td>
+            <td id="sponsor1"></td>
+            <td id="points1"></td>
         </tr>
         <tr>
-            <td>3</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th scope="row" id="position2"></th>
+            <td id="driverName2"></td>
+            <td id="nationality2"></td>
+            <td id="sponsor2"></td>
+            <td id="points2"></td>
         </tr>
         <tr>
-            <td>4</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th scope="row" id="position3"></th>
+            <td id="driverName3"></td>
+            <td id="nationality3"></td>
+            <td id="sponsor3"></td>
+            <td id="points3"></td>
         </tr>
         <tr>
-            <td>5</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th scope="row" id="position4"></th>
+            <td id="driverName4"></td>
+            <td id="nationality4"></td>
+            <td id="sponsor4"></td>
+            <td id="points4"></td>
         </tr>
         <tr>
-            <td>6</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th scope="row" id="position5"></th>
+            <td id="driverName5"></td>
+            <td id="nationality5"></td>
+            <td id="sponsor5"></td>
+            <td id="points5"></td>
         </tr>
         <tr>
-            <td>7</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th scope="row" id="position6"></th>
+            <td id="driverName6"></td>
+            <td id="nationality6"></td>
+            <td id="sponsor6"></td>
+            <td id="points6"></td>
         </tr>
     </table>
 </body>
